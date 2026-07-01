@@ -2,52 +2,129 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>My Portfolio 🪼</title>
     <style>
         body {
-            background: linear-gradient(to right, #74ebd5, #9face6);
             font-family: Arial, sans-serif;
-            text-align: center;
+            background: radial-gradient(circle at top, #a6e3ff, #5ecbff, #1e3c72);
             margin: 0;
             padding: 0;
+            color: #033b4a;
         }
 
-        .card {
-            background: white;
-            width: 350px;
-            margin: 80px auto;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 25px rgba(0,200,255,0.4);
+            text-align: center;
         }
 
-        img {
-            width: 120px;
-            height: 120px;
+        .profile img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 15px;
+            border: 3px solid #7fe7ff;
+            box-shadow: 0 0 20px #7fe7ff;
         }
 
         h1 {
-            font-size: 22px;
-            color: #333;
+            margin-top: 15px;
+            color: #e0f7ff;
+            text-shadow: 0 0 10px #7fe7ff;
         }
 
-        p {
-            color: #555;
+        .info p {
+            margin: 6px 0;
             font-size: 16px;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .section h3 {
+            color: #c9f4ff;
+            margin-bottom: 10px;
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .list div {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,255,255,0.3);
+        }
+
+        hr {
+            margin: 25px 0;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .contact {
+            font-size: 16px;
+        }
+
+        /* hover ลอย */
+        .container:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Profile">
-        <h1>สวัสดีครับ ยินดีต้อนรับสู่พอร์ตของตามพร</h1>
-        <p>ชื่อ-นามสกุล : นางสาวตามพร ลุงทุน</p>
-        <p>ตำแหน่ง : นักศึกษาสาขาเทคโนโลยีสารสนเทศ</p>
+<div class="container">
+
+    <div class="profile">
+        <img src="/mnt/data/a3ca1ad7-11db-4a7e-8e88-586ef7290f6b.jpg" alt="Profile">
+        <h1>ตามพร 🪼</h1>
     </div>
+
+    <div class="info">
+        <p>ชื่อ-นามสกุล : นางสาวตามพร ลุงทุน</p>
+        <p>ชื่อเล่น : แก้มใส</p>
+        <p>ตำแหน่ง : นักศึกษาสาขาเทคโนโลยีสารสนเทศ (IT)</p>
+    </div>
+
+    <div class="section">
+        <h3>💻 โปรแกรมที่ใช้</h3>
+        <div class="list">
+            <div>Photoshop</div>
+            <div>Figma</div>
+            <div>Word</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>💻 ภาษาโปรแกรม</h3>
+        <div class="list">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>PHP</div>
+            <div>SQL</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section contact">
+        <h3>📈 ติดต่อ</h3>
+        <p>Email: pealungthun628@gmail.com</p>
+    </div>
+
+</div>
 
 </body>
 </html>
